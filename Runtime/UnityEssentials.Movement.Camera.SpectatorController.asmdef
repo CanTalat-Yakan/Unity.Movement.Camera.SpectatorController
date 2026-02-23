@@ -1,5 +1,5 @@
 {
-    "name": "UnityEssentials.CameraSpectatorController",
+    "name": "UnityEssentials.Movement.Camera.SpectatorController",
     "rootNamespace": "UnityEssentials",
     "references": [],
     "includePlatforms": [],
