@@ -51,7 +51,7 @@ namespace UnityEssentials
     public class CameraSpectatorController : MonoBehaviour
     {
         [Tooltip("The script is currently active")]
-        [SerializeField] private bool _active = true;
+        public static bool Enabled { get; set; } = false;
 
         public CameraSpectatorControllerSettings Settings;
 
@@ -89,7 +89,7 @@ namespace UnityEssentials
 
         public void Update()
         {
-            if (!_active)
+            if (!Enabled)
             {
                 _isRightMouseHeld = false;
                 UpdateControlCursorState(false);
